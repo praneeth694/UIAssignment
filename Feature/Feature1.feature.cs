@@ -74,14 +74,14 @@ namespace TestProjectUI.Feature
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("This is Test 1")]
+        [NUnit.Framework.DescriptionAttribute("This is a test to login to Labcorp and validate a Job Posting")]
         [NUnit.Framework.CategoryAttribute("tag1")]
-        public void ThisIsTest1()
+        public void ThisIsATestToLoginToLabcorpAndValidateAJobPosting()
         {
             string[] tagsOfScenario = new string[] {
                     "tag1"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("This is Test 1", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("This is a test to login to Labcorp and validate a Job Posting", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 6
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -93,13 +93,13 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 7
- testRunner.Given("I go to Google", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I go to LabCorp.com", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 8
  testRunner.Then("I click on Careers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 9
- testRunner.Then("I search for a QA Job and Verify the Job details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I search for a QA Job and Verify the Job details \"Test Automation Engineer\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 10
  testRunner.Then("I switch to the job posting and verify details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
